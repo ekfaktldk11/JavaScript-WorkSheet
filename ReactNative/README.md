@@ -20,4 +20,26 @@ React Native render the app items by using special tag 'JSX'. Except tag, most o
 
 - expo 사용시에는 expo에서 알아서 처리를 해주는게 대부분이고, bareboned RN 개발시에는 위처럼 FMT에 주의가 요구됨
 
+# The Standard order of the building a App
 
+1. DownLoad some dependencies you'll need(expectation)
+
+2. Adding a Custom Header Component
+- It is better to split your app into mutiple components which you then compose together
+- For the main concept of the App(such as colors, size, etc...), we should make constants folder that include the collection of the concept
+
+3. Adding a Screen Component 
+- Screens.js files should be in 'screen' folder as Components.js file are in component folder
+- This seperation is helpful for reusability & flexiblity
+
+
+# How To Debug ?
+(1). Chrome debugger and breakpoints is a great tool and it's supported by React Native, both when you’re using expo or when you’re not using expo
+-> Remote Debugger & Breakpoints
+-> In IOS : command + D
+-> In Android : ctrl + M (Debug JS remotely)
+
+(2). Understanding Code Folow with 
+console.log()
+
+(3). If you hard to find some error or you want to dive into the style and see what's going on there, RN-Debugger will be better to examine them.

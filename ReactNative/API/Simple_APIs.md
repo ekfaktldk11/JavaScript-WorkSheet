@@ -9,6 +9,9 @@
 
 # TextInput
 - html, <textarea>
+- If we only use number in the TextInput, keyboardType='numeric' or 'number-pad'
+- 'BlurOnSubmit' prop
+: When we click the submit button, then the keyboard fade (In Android)
 
 # StyleSheet
 - flex : 1 -> 1은 화면 전체를 의미하고 주로 container로 쓰임 / 숫자가 커질 수록 그 화면 차지 비율이 감소
@@ -50,3 +53,13 @@
 
 # ProgerssBarAndroid
 - 상태 바 -> 진행 중인 상태를 표기하는 ~ ActivityIndicator와 비슷한 역할
+
+# Touchable Components
+: View의 props들 중 onTouchEnd , onTouchStart 가 있는데 그 사이의 시간을 정해서 누르고 있는 시간만큼에 따라 다른 활성화를 시켜줄 수 있다.
+- onTouchStart : 누르자 마자
+- onTouchEnd : 설정한 시간이상 만큼 눌렀을 경우(활성화)
+-> 근데 위는 너무 코드가 복잡해져서 not ideal
+
+- 그래서 <TouchableOpacity> 로 감싸서 onPress 또는 onLongPress를 사용함!
+- <TouchableOpacity> 의 ‘activeOpacity’ prop을 사용하면 눌렀을 때의 투명도를 설정해 줄수 있음 ex) activeOpacity={0.8} 
+- Touchable components 들은 모든 컴포넌트에 씌워서 버튼처럼 사용할 수 있음!

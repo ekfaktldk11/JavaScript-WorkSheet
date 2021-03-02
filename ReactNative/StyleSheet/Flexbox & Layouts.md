@@ -1,3 +1,7 @@
+# React Native Styling vs CSS Styling
+- Styling in React Native is inspired by CSS, but it's not equivalent
+
+
 # Flexbox & Layouts
 - flexDirection : 아이템들의 배치를 열(column) 또는 행(row)으로 배치
 
