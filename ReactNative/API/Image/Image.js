@@ -16,8 +16,6 @@
     -> The web image always have to set a width & a height on the !<image> component! (not <View>)
 */
 
-/**1**/
-
 const GameOverScreen = props => {
     return (
         <View style={styles.screen}>
@@ -68,3 +66,5 @@ const styles = StyleSheet.create({
         marginHorizontal : 20,
     }
 });
+
+

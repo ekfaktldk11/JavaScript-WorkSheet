@@ -2,13 +2,13 @@
 - 데이터 또는 모듈 로딩 시, 원의 형태로 돌아가는것 (사이즈 , 컬러 설정가능)
 
 # View 
-- html, <div>
+- html, div
 
 # Text 
-- html, <input type='text'>
+- html, input type='text'
 
 # TextInput
-- html, <textarea>
+- html, textarea
 - If we only use number in the TextInput, keyboardType='numeric' or 'number-pad'
 - 'BlurOnSubmit' prop
 : When we click the submit button, then the keyboard fade (In Android)
@@ -27,7 +27,7 @@
 - 여기 있는 View 나 Button 뭐 등등들은 각각의 함수 이므로 새로운 구동을 하는 함수 또한 만들어
 줄 수 있음. 
 - ex) function Separator() {
-  return <View style={styles.separator} />;
+  return 'View' style={styles.separator} ;
 }
 -> 위 처럼 Separator 함수를 만들어서 styles.separator를 보여주게(View) 만들 수 있음. 
 위 styles.separator 의 separator는 유저가 스타일 만들어주는 것 ~
@@ -56,6 +56,6 @@
 - onTouchEnd : 설정한 시간이상 만큼 눌렀을 경우(활성화)
 -> 근데 위는 너무 코드가 복잡해져서 not ideal
 
-- 그래서 <TouchableOpacity> 로 감싸서 onPress 또는 onLongPress를 사용함!
-- <TouchableOpacity> 의 ‘activeOpacity’ prop을 사용하면 눌렀을 때의 투명도를 설정해 줄수 있음 ex) activeOpacity={0.8} 
+- 그래서 'TouchableOpacity' 로 감싸서 onPress 또는 onLongPress를 사용함!
+- 'TouchableOpacity' 의 ‘activeOpacity’ prop을 사용하면 눌렀을 때의 투명도를 설정해 줄수 있음 ex) activeOpacity={0.8} 
 - Touchable components 들은 모든 컴포넌트에 씌워서 버튼처럼 사용할 수 있음!

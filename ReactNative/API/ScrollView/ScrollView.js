@@ -1,5 +1,7 @@
 /* Making something Scrollable with ScrollView */
 
+/**1**/
+
 <ScrollView>
     {courseGoals.map(goal => (
         <View key={goal} style={styles.listItem}>
@@ -20,4 +22,19 @@
     메모리 적으로도 비효율 적임.
 
     그럴경우엔 <FlatList>를 사용하자 
+*/
+
+/**2**/
+
+/*
+-Styling List Items & Lists
+
+    1. If you want to control the height or the width of your scroll view, then dont add 
+    the style to the list items(neither <ScrollView>), add the style to the
+    <View> that contain the list items
+
+    2. A parent component of a <ScrollView>, 
+    that would be <View>, must have a style props, flex in Android 
+    platform(if not, the <ScrollView> isn't working)
+
 */

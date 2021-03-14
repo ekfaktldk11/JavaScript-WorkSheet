@@ -19,7 +19,7 @@
 useState(false); (In App.js Compo)
 
 5. If (!dataLoaded) {
-  return <AppLoading startAsync={fetchFonts} onFinish={() => setDataLoaded(true)}/>;
+  return -AppLoading startAsync={fetchFonts} onFinish={() => setDataLoaded(true)}-;
 };
 
 6. Two conditions of startAsync value
@@ -44,15 +44,15 @@ useState(false); (In App.js Compo)
 
 # Custom Wrapper Components & Global Styles
 
-1. Style's props fontFamily can only apply on the <Text> Component
-- so in the <View>, you can't apply the props to use it
+1. Style's props fontFamily can only apply on the 'Text' Component
+- so in the 'View', you can't apply the props to use it
 
-2. It is helpful that creat a custom component which give 'fontFamily' props with a <View/> :
+2. It is helpful that creat a custom component which give 'fontFamily' props with a 'View' :
 - BodyText.js
 import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
-const BodyText = props => <Text style= {styles.body}>{props.children}</Text>
+const BodyText = props => 'Text' style= {styles.body}>{props.children}'Text'
 
 const styles = StyleSheet.create({
   body:{
@@ -70,6 +70,7 @@ export default BodyText;
 4. OR..
 - Create a Constant file
 : In defauult-styles.js ..
+
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
